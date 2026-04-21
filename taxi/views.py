@@ -57,14 +57,14 @@ class DriverDetailView(LoginRequiredMixin, generic.DetailView):
 
 class ManufacturerCreateView(LoginRequiredMixin, generic.CreateView):
     model = Manufacturer
-    fields = "__all__"
     success_url = reverse_lazy("taxi:manufacturer-list")
+    fields = "__all__"
 
 
 class ManufacturerUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Manufacturer
-    fields = "__all__"
     success_url = reverse_lazy("taxi:manufacturer-list")
+    fields = "__all__"
 
 
 class ManufacturerDeleteView(LoginRequiredMixin, generic.DeleteView):
